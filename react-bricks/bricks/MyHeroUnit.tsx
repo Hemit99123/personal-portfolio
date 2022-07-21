@@ -1,5 +1,5 @@
 import React, { Children } from 'react'
-import { Text, RichText, Image, types } from 'react-bricks/frontend'
+import { Text, RichText, Image, types} from 'react-bricks/frontend'
 
 //=============================
 // Local Types
@@ -19,13 +19,6 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({ padding }) => {
   return (
     <div className={`max-w-xl mx-auto px-6 ${padding === 'big' ? 'py-20' : 'py-12'}`}>
       <div>
-        <Image
-          propName="icon"
-          alt="Icon"
-          maxWidth={80}
-          aspectRatio={1}
-          imageClassName="w-20 mb-5 mx-auto"
-        />
         <Text
           renderBlock={(props) => (
             <h1 className="text-3xl sm:text-4xl text-center font-black text-gray-900 dark:text-white leading-tight mb-3">
