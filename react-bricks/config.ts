@@ -6,8 +6,8 @@ import pageTypes from './pageTypes'
 import NextLink from './NextLink'
 
 const config: types.ReactBricksConfig = {
-  appId: "0cf307d5-4f78-4477-8771-3ad0aa9ef5fc",
-  apiKey: "2b3079ff-72f7-4169-a994-85796bb80392",
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  apiKey: process.env.API_KEY,
   pageTypes,
   bricks,
   logo: '/logo.svg',
